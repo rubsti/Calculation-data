@@ -1,0 +1,22 @@
+import numpy as np
+import matplotlib.pyplot as plt
+
+# Генерация случайных данных
+x = np.linspace(0, 10, 100)
+y = np.sin(x)
+
+# Создание графика
+plt.plot(x, y)
+plt.title("График синусоиды")
+plt.xlabel("x")
+plt.ylabel("y")
+
+# Сохранение графика в файл
+plt.savefig("sinusoid_plot.png")
+plt.close()
+
+# Анализ данных
+mean = np.mean(y)
+std_dev = np.std(y)
+print("Среднее значение:", mean)
+print("Стандартное отклонение:", std_dev)
